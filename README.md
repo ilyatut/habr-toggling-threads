@@ -12,7 +12,7 @@
 
 ### Пример настроек для "User JavaScript and CSS"
 
-![Пример настроек для "User JavaScript and CSS"](ilyatut.github.com/habr-toggling-threads/examples/examples.png)
+![Пример настроек для "User JavaScript and CSS"](examples/examples.png)
 
 
 # JS script for toggling Habr.com comment threads
@@ -29,4 +29,4 @@ That's it! After saving and activating a new rule and reloading Habr.com page yo
 
 ### Settings example for "User JavaScript and CSS"
 
-![User JavaScript and CSS Example](ilyatut.github.com/habr-toggling-threads/examples/examples.png)
+![User JavaScript and CSS Example](examples/examples.png)
