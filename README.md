@@ -2,7 +2,7 @@
 
 Чтобы использовать данный скрипт в вашем браузере, нужно установить любой плагин, позволяющий:
   - запускать JS скрипты на выбранной вами странице или домене;
-  - подключать jQuery при загрузке старницыю.
+  - подключать jQuery при загрузке старницы.
 
 Например, вы можете выбрать плагин ["User JavaScript and CSS"](https://chrome.google.com/webstore/detail/user-javascript-and-css/nbhcbdghjpllgmfilhnhkllmkecfmpld) для  Chrome или любой другой, похожий на него.
 
