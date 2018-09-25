@@ -47,54 +47,38 @@ $(document).ready(function(){
 
 	// create close event for the first level of all comments
 	$(document).on('click', '.close_first_level', function(){
-		var first_level_comments = $("#comments-list > .content-list__item_comment");
-
-		$.each(first_level_comments, function(index, value) {
-			var button = $(this).find(".switch_btn").filter(':first');
-			var opened = button.hasClass('opened') || !button.hasClass('closed');
-			if (opened) {
-				button.click();	
-			}
+		$("#comments-list > .content-list__item_comment").each(function() {
+			click_button($(this), true);
 		});
 	});
 	
 	// create open event for the first level of all comments
 	$(document).on('click', '.open_first_level', function(){
-		var first_level_comments = $("#comments-list > .content-list__item_comment");
-		
-		$.each(first_level_comments, function(index, item) {
-			var button = $(this).find(".switch_btn").filter(':first');
-			var opened = button.hasClass('opened') || !button.hasClass('closed');
-			if (!opened) {
-				button.click();	
-			}
+		$("#comments-list > .content-list__item_comment").each(function() {
+			click_button($(this), false);
 		});
 	});
 
 	// create close event for all comments
 	$(document).on('click', '.close_all', function(){
-		var all_comments = $(".content-list__item_comment");
-
-		$.each(all_comments, function(index, value) {
-			var button = $(this).find(".switch_btn").filter(':first');
-			var opened = button.hasClass('opened') || !button.hasClass('closed');
-			if (opened) {
-				button.click();	
-			}
+		$(".content-list__item_comment").each(function() {
+			click_button($(this), true);
 		});
 	});
 	
 	// create open event for all comments
 	$(document).on('click', '.open_all', function(){
-		var all_comments = $(".content-list__item_comment");
-		
-		$.each(all_comments, function(index, item) {
-			var button = $(this).find(".switch_btn").filter(':first');
-			var opened = button.hasClass('opened') || !button.hasClass('closed');
-			if (!opened) {
-				button.click();	
-			}
+		$(".content-list__item_comment").each(function() {
+			click_button($(this), false);
 		});
 	});
 
+	// click on a button in a comment block (closed or open)
+	function click_button(element, find_opened) {
+		var button = element.find(".switch_btn").filter(':first');
+		var opened = button.hasClass('opened') || !button.hasClass('closed');
+		if ((find_opened && opened ) || (!find_opened && !opened)) {
+			button.click();	
+		}
+	}
 });
