@@ -14,6 +14,11 @@
 
 ![Пример настроек для "User JavaScript and CSS"](examples/example.png)
 
+### Вид кнопок на сайте
+
+![Вид кнопок на сайте](examples/example2.png)
+
+
 
 # JS script for toggling Habr.com comment threads
 
@@ -30,3 +35,7 @@ That's it! After saving and activating a new rule and reloading Habr.com page yo
 ### Settings example for "User JavaScript and CSS"
 
 ![User JavaScript and CSS Example](examples/example.png)
+
+### Buttons at the site
+
+![Buttons at the site](examples/example2.png)
