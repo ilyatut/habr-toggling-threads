@@ -10,6 +10,10 @@
 
 Вот и всё! После сохранения и активации нового правила, и перезагрузки странички на Habr.com, вы увидите кнопки сворачивания ветки в заголовке каждого комментария.
 
+### Пример настроек для "User JavaScript and CSS"
+
+![Пример настроек для "User JavaScript and CSS"](ilyatut.github.com/habr-toggling-threads/examples/examples.png)
+
 
 # JS script for toggling Habr.com comment threads
 
@@ -22,3 +26,7 @@ For example you can choose ["User JavaScript and CSS"](https://chrome.google.com
 Then you should create a new rule for the Habr.com domen, insert the content of script.js file into the JavaScript section and make sure the plugin is injecting jQuery into the pages.
 
 That's it! After saving and activating a new rule and reloading Habr.com page you'll see close/open buttons in the head of every comment.
+
+### Settings example for "User JavaScript and CSS"
+
+![User JavaScript and CSS Example](ilyatut.github.com/habr-toggling-threads/examples/examples.png)
