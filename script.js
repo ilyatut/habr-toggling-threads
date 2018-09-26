@@ -14,20 +14,19 @@ $(document).ready(function(){
 		'font-weight: normal',
 	].join("; ");
 	
-	// create all buttons
+	// create all single comment buttons
 	var btn_html = '<span class="switch_btn" style="' + btn_style + ';">-</span>';
-	var close_first_level_btn = '<span class="close_first_level" style="' + btn_style + '; margin-top: 4px;">- 1ый</span>';
-	var open_first_level_btn = '<span class="open_first_level" style="' + btn_style + '; margin-top: 4px;">+ 1ый</span>';
-	var close_all_btn = '<span class="close_all" style="' + btn_style + '; margin-top: 4px;">- все</span>';
-	var open_all_btn = '<span class="open_all" style="' + btn_style + '; margin-top: 4px;">+ все</span>';
-	
 	$('.comment__head').append(btn_html);
-	$('.comments-section__subscribe-panel')
-		.append(close_first_level_btn)
-		.append(open_first_level_btn)
-		.append(close_all_btn)
-		.append(open_all_btn)
+
+	// create global control buttons
+	btn_style += '; margin-top: 4px';
+	var global_btns = 
+		'<span class="close_first_level" style="' + btn_style + ';">- 1ый</span>' + 
+		'<span class="open_first_level" style="' + btn_style + ';">+ 1ый</span>' + 
+		'<span class="close_all" style="' + btn_style + ';">- все</span>' + 
+		'<span class="open_all" style="' + btn_style + ';">+ все</span>'
 	;
+	$('.comments-section__subscribe-panel').append(global_btns);
 	
 	// create open/close event for single comments
 	$(document).on('click', '.switch_btn', function(){
