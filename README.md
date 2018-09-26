@@ -12,11 +12,11 @@
 
 ### Пример настроек для "User JavaScript and CSS"
 
-![Пример настроек для "User JavaScript and CSS"](examples/example.png)
+![Пример настроек для "User JavaScript and CSS"](examples/example.png?1)
 
 ### Вид кнопок на сайте
 
-![Вид кнопок на сайте](examples/example2.png)
+![Вид кнопок на сайте](examples/example2.png?1)
 
 
 
@@ -35,8 +35,8 @@ That's it! After saving and activating a new rule and reloading Habr.com page yo
 
 ### Settings example for "User JavaScript and CSS"
 
-![User JavaScript and CSS Example](examples/example.png)
+![User JavaScript and CSS Example](examples/example.png?1)
 
 ### Buttons at the site
 
-![Buttons at the site](examples/example2.png)
+![Buttons at the site](examples/example2.png?1)
