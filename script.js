@@ -19,7 +19,8 @@ $(document).ready(function(){
 		
 		// create all single comment buttons
 		var btn_html = '<span class="htt__switch_btn" style="' + btn_style + '">-</span>';
-		$('.comment__head').append(btn_html);
+		$(".content-list:not(:empty)").closest(".content-list__item").children(".comment").children(".comment__head").append(btn_html);
+		// $('.comment__head').append(btn_html);
 
 		// create global control buttons
 		btn_style += 'margin-top: 4px;';
