@@ -37,12 +37,12 @@ $(document).ready(function(){
 			var opened = $(this).hasClass('opened') || !$(this).hasClass('closed');
 		
 			if (opened) {
-				sub_comments_block.hide();
+				sub_comments_block.slideUp(300);
 				var comments_count = sub_comments_block.find('.comment').length;
 				$(this).removeClass('opened').addClass('closed').html('+' + comments_count);
 			}
 			else {
-				sub_comments_block.show();
+				sub_comments_block.slideDown(300);
 				$(this).removeClass('closed').addClass('opened').html('-');
 			}
 		});
