@@ -17,9 +17,18 @@ $(document).ready(function(){
 			'font-weight: normal;'
 		;
 		
-		// create all single comment buttons
+		// create all single comments button
 		var btn_html = '<span class="htt__switch_btn" style="' + btn_style + '">-</span>';
-		$(".content-list:not(:empty)").closest(".content-list__item").children(".comment").children(".comment__head").append(btn_html);
+
+		// show buttons only if there are comments in a thread
+		$(".content-list:not(:empty)")
+			.closest(".content-list__item")
+			.children(".comment")
+			.children(".comment__head")
+			.append(btn_html)
+		;
+
+		// show buttons in every comment
 		// $('.comment__head').append(btn_html);
 
 		// create global control buttons
