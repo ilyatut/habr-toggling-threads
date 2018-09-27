@@ -50,37 +50,37 @@ $(document).ready(function(){
 		// create close event for the first level of all comments
 		$(document).on('click', '.htt__close_first_level', function(){
 			$("#comments-list > .content-list__item_comment").each(function() {
-				click_button($(this), true);
+				click_button($(this), 'close');
 			});
 		});
 		
 		// create open event for the first level of all comments
 		$(document).on('click', '.htt__open_first_level', function(){
 			$("#comments-list > .content-list__item_comment").each(function() {
-				click_button($(this), false);
+				click_button($(this), 'open');
 			});
 		});
 
 		// create close event for all comments
 		$(document).on('click', '.htt__close_all', function(){
 			$(".content-list__item_comment").each(function() {
-				click_button($(this), true);
+				click_button($(this), 'close');
 			});
 		});
 		
 		// create open event for all comments
 		$(document).on('click', '.htt__open_all', function(){
 			$(".content-list__item_comment").each(function() {
-				click_button($(this), false);
+				click_button($(this), 'open');
 			});
 		});
 	}
 
 	// click on a button in a comment block (closed or open)
-	function click_button(element, find_opened) {
+	function click_button(element, action) {
 		var button = element.find(".htt__switch_btn").filter(':first');
 		var opened = button.hasClass('opened') || !button.hasClass('closed');
-		if ((find_opened && opened ) || (!find_opened && !opened)) {
+		if ((action === 'close' && opened) || (action === 'open' && !opened)) {
 			button.click();	
 		}
 	}	
