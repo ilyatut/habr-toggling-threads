@@ -13,7 +13,7 @@ $(document).ready(function(){
 			'cursor: pointer;' +
 			'border-radius: 3px;' +
 			'text-align: center;' +
-			'opacity: 0.3;' +
+			'opacity: 0.5;' +
 			'font-weight: normal;'
 		;
 		
